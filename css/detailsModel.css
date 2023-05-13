@@ -1,0 +1,42 @@
+
+/* start detailsModel */
+.detailsBtnn {
+    background-color: var(--buttonColor);
+    border: none !important;
+    border-radius: 10px;
+  }
+  .detailsBtnn:hover {
+    background-color: var(--buttonColor) !important;
+    border: none !important;
+    color: white !important;
+  }
+  .detailsImg {
+    border-radius: 20px !important;
+    height: 400px;
+    width: 95%;
+  }
+  .detailTittle {
+    color: var(--greenColor);
+  }
+  .ingredients {
+    color: var(--buttonColor);
+  }
+  /* end detailsModel */
+  /* mediaQuery */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .detailsModelContent{
+    width: 99% !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  .detailsModelContent{
+    width: 99% !important;
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .detailsModelContent{
+    width: 99% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}

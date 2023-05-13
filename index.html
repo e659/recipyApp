@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/detailsModel.css" />
+    <link rel="stylesheet" href="css/cartModel.css" />
+    <link rel="stylesheet" href="css/fav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>LunchCrafters</title>
+  </head>
+  <body>
+    <!--start nav -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pt-4">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >Lunch<span class="fw-bold">Crafters</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-link-ltr"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="#delivery">Delivery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-ltr" href="#conatct">Contact</a>
+            </li>
+          </ul>
+
+          <i
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal5"
+            class="fa fa-regular fa-heart mx-3"
+          ></i>
+          <span class="favLength">0</span>
+          <!-- favModel -->
+          <div
+            class="modal fade modelFade"
+            id="exampleModal5"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content favModal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Favorites</h5>
+                  <form class="d-flex">
+                    <input
+                      id="search-text"
+                      class="form-control ms-4 favsearch"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </form>
+                  <button class="btn clearAllfavBtn bg-danger ms-4">
+                    Clear
+                  </button>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="favCard">
+                    <div id="favModelBody" class="row"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <i
+            class="fa fa-light fa-cart-shopping"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          ></i>
+          <span class="cartLength">0</span>
+          <div
+            class="modal fade modelFade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content cartModal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                  <form class="d-flex">
+                    <input
+                      id="search-text"
+                      class="form-control ms-4"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </form>
+                  <button class="btn clearAllCarBtn bg-danger ms-4">
+                    Clear Cart
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="cartCard">
+                    <div id="cartModelBody" class="row"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end nav -->
+    <!-- start header -->
+    <section id="home" class="vh-100">
+      <div class="container pt-5">
+        <div class="row headerRow mt-5">
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="headerCaption p-5">
+              <h1 class="fw-bold">
+                Fresh & <br />
+                tasty food
+              </h1>
+              <p class="fs-5">
+                Relax Please, We have got <br />
+                you covered every day of the week
+              </p>
+              <button class="btn DiscoverBtn px-5 py-2 mt-5">
+                Discover Menu
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="headerImage position-relative">
+              <div class="d-flex align-items-end">
+                <img
+                  src="./images/salad-removebg-preview.png"
+                  alt="dish"
+                  class="dishImg img-fluid"
+                />
+              </div>
+
+              <img
+                src="./images/2-removebg-preview.png"
+                alt="leave"
+                class="w-25 leaveImg"
+              />
+              <img
+                src="./images/2-removebg-preview.png"
+                alt="leave"
+                class="w-25 leaveImg2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end header -->
+    <!-- start menu -->
+    <section id="menu" class="py-5">
+      <div class="container">
+        <div class="secTitle pt-5 d-flex justify-content-center">
+          <p>Popular Dishes</p>
+        </div>
+        <div class="row tabRow w-50 pt-3">
+          <div class="col">
+            <div class="tab activeLink">steak</div>
+          </div>
+          <div class="col">
+            <div class="tab">hamburger</div>
+          </div>
+          <div class="col">
+            <div class="tab">kebab</div>
+          </div>
+          <div class="col">
+            <div class="tab">seafood</div>
+          </div>
+          <div class="col">
+            <div class="tab">salad</div>
+          </div>
+          <div class="col">
+            <div class="tab">pizza</div>
+          </div>
+          <div class="col">
+            <div class="tab">pasta</div>
+          </div>
+        </div>
+
+        <div class="favAlert px-2 pt-1 d-none">
+          <i
+            class="fa fa-duotone fa-circle-xmark favAlertIcon"
+            style="--fa-primary-color: #ffffff; --fa-secondary-color: #33b572"
+          ></i>
+          Item Already Exist
+        </div>
+        <div class="row recipeRow pt-5 g-5"></div>
+      </div>
+    </section>
+    <!-- end Menu -->
+    <!-- DetailsModel -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content detailsModelContent">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="recipeData" class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary detailsBtnn"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- start footer -->
+    <footer class="footerContainer">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-6 col-md-3">
+            <h2>Get In Touch</h2>
+            <p>Don’t miss any updates of our new offers and features.!</p>
+            <form action="#" method="post">
+              <input
+                type="text"
+                name="email"
+                class="form-control memail mb-3"
+                placeholder="Email"
+              />
+              <button class="btn footerSubmitBtn" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2>Links</h2>
+            <ul class="list-unstyled f_list">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li class="py-2">
+                <a href="/">Menu</a>
+              </li>
+              <li>
+                <a href="/">Delivery</a>
+              </li>
+              <li class="py-2">
+                <a href="/">About</a>
+              </li>
+              <li>
+                <a href="/">Reviews</a>
+              </li>
+              <li>
+                <a href="/">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2>Help</h2>
+            <ul class="list-unstyled f_list">
+              <li>
+                <a href="/">FAQ</a>
+              </li>
+              <li class="py-2">
+                <a href="/">Term &amp; conditions</a>
+              </li>
+              <li>
+                <a href="/">Reporting</a>
+              </li>
+              <li class="py-2">
+                <a href="/">Documentation</a>
+              </li>
+              <li>
+                <a href="/">Support Policy</a>
+              </li>
+              <li class="pt-2">
+                <a href="/">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h2>social Media</h2>
+            <div class="f_social_icon">
+              <a href="/">
+                <i class="fa fa-brands fa-facebook"></i>
+              </a>
+
+              <a class="px-4" href="/">
+                <i class="fa fa-brands fa-twitter"></i>
+              </a>
+
+              <a href="/">
+                <i class="fa fa-brands fa-linkedin"></i>
+              </a>
+
+              <a class="px-4" href="/">
+                <i class="fa fa-brands fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a43ecc59f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/fav.js"></script>
+    <script src="js/signUp.js"></script>
+  </body>
+</html>

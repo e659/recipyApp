@@ -1,0 +1,147 @@
+.headerRow {
+  background-color: var(--mainColor);
+  border-radius: 30px;
+  transform: translateY(30px);
+}
+.dishImg {
+  width: 550px !important;
+  transform: translateY(15%);
+}
+.leaveImg {
+  position: absolute;
+  left: 75%;
+  top: 1%;
+}
+.leaveImg2 {
+  position: absolute;
+  right: 112%;
+  bottom: -14%;
+  transform: rotatez(52deg);
+}
+.headerCaption h1 {
+  font-size: 4rem;
+  line-height: 1;
+}
+.headerCaption .DiscoverBtn {
+  background-color: var(--buttonColor);
+  color: white;
+  border-radius: 20px;
+  border: none !important;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+/* mediaQuery */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .headerRow {
+    width: 392px;
+    transform: translate(10px,7%);
+  }
+  .headerCaption{
+    transform: translateY(24%);
+  }
+  .headerCaption h1 {
+    font-size: 2rem;
+  }
+  .headerCaption p {
+    font-size: 1.3rem !important;
+  }
+  .headerCaption .DiscoverBtn {
+    font-size: 20px !important;
+  }
+  .leaveImg {
+    left: 55%;
+    top: -144%;
+    width: 50% !important;
+  }
+  .leaveImg2 {
+    right: 2%;
+    bottom: -21%;
+  }
+  .dishImg {
+    width: 300px !important;
+    transform: translateY(30%);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  .headerRow {
+    width: 462px;
+    transform: translate(10px,2%);
+  }
+  .headerCaption{
+    transform: translateY(24%);
+  }
+  .headerCaption h1 {
+    font-size: 2rem;
+  }
+  .headerCaption p {
+    font-size: 1.3rem !important;
+  }
+  .headerCaption .DiscoverBtn {
+    font-size: 20px !important;
+  }
+  .leaveImg {
+    left: 55%;
+    top: -130%;
+    width:40% !important;
+  }
+  .leaveImg2 {
+    right: 2%;
+    bottom: -20%;
+  }
+  .dishImg {
+    width: 300px !important;
+    transform: translateY(30%);
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .headerRow {
+    width: 520px;
+    transform: translate(10px,2%);
+  }
+  .headerCaption{
+    transform: translateY(24%);
+  }
+  .headerCaption h1 {
+    font-size: 2rem;
+  }
+  .headerCaption p {
+    font-size: 1.3rem !important;
+  }
+  .headerCaption .DiscoverBtn {
+    font-size: 20px !important;
+  }
+  .leaveImg {
+    left: 55%;
+    top: -130%;
+    width:40% !important;
+  }
+  .leaveImg2 {
+    right: 2%;
+    bottom: -20%;
+  }
+  .dishImg {
+    width: 300px !important;
+    transform: translateY(30%);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .headerRow {
+    height: 600px;
+  }
+  .headerCaption h1 {
+    font-size: 2rem;
+  }
+  .dishImg {
+   
+    transform: translateY(30%);
+  }
+  .leaveImg {
+    left: 75%;
+    top: -10%;
+  }
+  .leaveImg2 {
+    right: 90%;
+    bottom: -20%;
+  }
+}

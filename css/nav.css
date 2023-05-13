@@ -1,0 +1,146 @@
+/* nav */
+.navbar-brand span {
+  color: var(--greenColor);
+}
+.nav-link.active {
+  color: var(--greenColor) !important ;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--greenColor) !important;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--fontColor);
+  margin: 0px 7px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: var(--greenColor);
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 5px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 80%;
+}
+.navbar input {
+  width: 95%;
+  border-radius: 20px;
+}
+.form-control:focus {
+  color: var(--greenColor);
+  background-color: #fff;
+  border-color: var(--greenColor);
+  outline: 0;
+  box-shadow: none !important;
+}
+.fa-cart-shopping {
+  cursor: pointer;
+  position: relative;
+}
+.fa-heart {
+  cursor: pointer;
+  font-size: 25px;
+}
+.fa-heart:hover {
+  color: var(--greenColor) !important;
+}
+.fa-cart-shopping:hover {
+  color: var(--greenColor) !important;
+}
+.cartLength {
+  background-color: var(--buttonColor);
+  color: white;
+  padding: 3px 9px;
+  border-radius: 50px;
+  font-size: 13px;
+  position: absolute;
+  left: 90.9%;
+  top: 24%;
+}
+.favLength {
+  background-color: var(--buttonColor);
+  color: white;
+  padding: 3px 9px;
+  border-radius: 50px;
+  font-size: 13px;
+  position: absolute;
+  left: 88.3%;
+  top: 29%;
+}
+/* end nav */
+
+/* mediaQuery */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .cartLength {
+    left: 20.9%;
+    top: 88%;
+  }
+  .fa-cart-shopping {
+    margin-top: 5%;
+    margin-left: 5px;
+  }
+  .favLength {
+    left: 9.9%;
+    top: 88%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  .cartLength {
+    left: 17.9%;
+    top: 88%;
+  }
+  .fa-cart-shopping {
+    margin-top: 5%;
+    margin-left: 5px;
+  }
+  .favLength {
+    left: 9%;
+    top: 88%;
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .cartLength {
+    left: 19.9%;
+    top: 88%;
+  }
+  .fa-cart-shopping {
+    margin-top: 5%;
+    margin-left: 5px;
+  }
+  .favLength {
+    left: 12%;
+    top: 88%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .cartLength {
+    left: 14.5%;
+    top: 88%;
+  }
+  .fa-cart-shopping {
+    margin-top: 5%;
+    margin-left: 5px;
+  }
+  .favLength {
+    left: 9%;
+    top: 88%;
+  }
+}

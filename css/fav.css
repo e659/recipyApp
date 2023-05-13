@@ -1,0 +1,98 @@
+.favModal-content {
+  width: 1100px !important;
+  border-radius: 20px 0px 20px 20px;
+  box-shadow: -1px 6px 12px 0px rgba(136, 136, 136, 0.2);
+  right: 18%;
+  top: -8px;
+}
+.cartHeart {
+  background-color: blue !important;
+}
+.fa-circle-xmark {
+  left: 92%;
+  position: absolute;
+  font-size: 24px;
+  z-index: 100;
+  top: 2%;
+  color: var(--fa-secondary-color);
+  cursor: pointer;
+}
+.clearAllfavBtn {
+  color: white;
+  border-radius: 20px;
+}
+.clearAllfavBtn:hover {
+  color: white !important;
+}
+.favbtnDiv {
+  left: 7% !important;
+}
+/* mediaQuery */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .favModal-content {
+    width: 98% !important;
+    right: -1%;
+  }
+  .favCard {
+    width: 99% !important;
+    margin-top: 5%;
+  }
+  .fa-circle-xmark {
+    top: 2%;
+    left: 94%;
+  }
+  .favbtnDiv {
+    left: 15% !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 568px) {
+  .favModal-content {
+    width: 98% !important;
+    right: -1%;
+  }
+  .favCard {
+    width: 99% !important;
+    margin-top: 5%;
+  }
+  .fa-circle-xmark {
+    top: 2%;
+    left: 94%;
+  }
+  .favbtnDiv {
+    left: 20% !important;
+  }
+}
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .favModal-content {
+    width: 550px !important;
+    left: 1%;
+  }
+  .favCard {
+    width: 99% !important;
+    margin-top: 5%;
+  }
+  .fa-circle-xmark {
+    top: 2%;
+    left: 96%;
+  }
+  .favbtnDiv {
+    left: 25% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .favModal-content {
+    width: 753px !important;
+    right: 26%;
+  }
+  .favCard {
+    width: 99% !important;
+    margin-top: 5%;
+  }
+  .fa-circle-xmark {
+    top: 1%;
+    left: 92%;
+  }
+  /* .favbtnDiv {
+    left: 25% !important;
+  } */
+}

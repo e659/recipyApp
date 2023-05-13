@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* global styles */
+:root {
+  --mainColor: #ffea76;
+  --fontColor: black;
+  --greenColor: rgb(51, 181, 114);
+  --buttonColor: #ff785b;
+}
+
